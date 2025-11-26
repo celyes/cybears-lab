@@ -41,4 +41,6 @@ jobs:
               
             - name: Run test
               run: php artisan test
+            - name: Print secret
+              run: echo ${{ secrets.SECRET_PROJECT }}
         
