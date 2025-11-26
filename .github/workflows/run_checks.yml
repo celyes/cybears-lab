@@ -31,8 +31,7 @@ jobs:
               run: composer install --no-progress --no-suggest --prefer-dist
             
             - name: "create env"
-              run: cp .env.example .env
-                   PHP artisan key:generate 
+              run: cp .env.example .env 
 
             - name: "Migrate laravel database"
               run: php artisan migrate --force
